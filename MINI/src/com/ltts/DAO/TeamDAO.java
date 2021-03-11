@@ -59,7 +59,7 @@ public class TeamDAO
 	{
 		Config c=new Config();
 		Connection con=c.getConnection();
-		PreparedStatement ps=con.prepareStatement("UPDATE player SET teamname=?,ownername=?,coachname=? where teamid=?");
+		PreparedStatement ps=con.prepareStatement("UPDATE team SET teamname=?,ownername=?,coachname=? where teamid=?");
 		ps.setString(1,tname);
 		ps.setString(2, oname);
 		ps.setString(3, cname);

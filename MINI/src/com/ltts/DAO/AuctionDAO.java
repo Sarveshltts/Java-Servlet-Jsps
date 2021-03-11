@@ -61,7 +61,7 @@ public class AuctionDAO
 	{
 		Config c=new Config();
 		Connection con=c.getConnection();
-		PreparedStatement ps=con.prepareStatement("UPDATE player SET teamid=?,playerid=?,year=?,cost=? where auctionid=?");
+		PreparedStatement ps=con.prepareStatement("UPDATE auction SET teamid=?,playerid=?,year=?,cost=? where auctionid=?");
 		ps.setInt(1,tid);
 		ps.setInt(2, pid);
 		ps.setInt(3, year);
