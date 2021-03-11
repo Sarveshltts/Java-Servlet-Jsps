@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ltts.DAO.PlayerDAO;
-import com.ltts.model.Player;
 
 /**
  * Servlet implementation class UpdatePlayerServlet
@@ -52,7 +51,7 @@ public class UpdatePlayerServlet extends HttpServlet {
 			rd.forward(request, response);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			rd=request.getRequestDispatcher("index.html");
+			rd=request.getRequestDispatcher("home.html");
 			rd.include(request, response);
 			e.printStackTrace();
 		}

@@ -52,7 +52,7 @@ public class InsertTeamServlet extends HttpServlet {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			rd=request.getRequestDispatcher("index.html");
+			rd=request.getRequestDispatcher("home.html");
 			rd.include(request, response);
 		}
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
